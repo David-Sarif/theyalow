@@ -36,7 +36,7 @@ ul {
 }
 
 header {
-    background-image: url(/assets/image/back-layer.png);
+    background-image: url(../assets/image/back-layer.png);
     background-size: cover;
     padding-top: 28px;
     padding-bottom: 50px;
@@ -113,7 +113,7 @@ a {
 }
 
 .nav__list li:first-child {
-    margin-left: 40px;
+    margin-left: 30px;
     border-left: none;
 }
 
