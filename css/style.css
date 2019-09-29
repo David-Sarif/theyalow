@@ -1,35 +1,56 @@
-
 @font-face {
     font-family: 'Segoe WP';
     font-style: normal;
     font-weight: normal;
     src: local('Segoe WP'), url('/assets/fonts/SegoeWP.woff') format('woff');
-    }
+}
+
 @font-face {
-        font-family: 'Asap';
-        font-style: normal;
-        font-weight: normal;
-        src: local('Asap'), url('/assets/fonts/Asap-Medium.otf') format('opentype');
-        }    
+    font-family: 'Asap';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Asap'), url('/assets/fonts/Asap-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Lucida Sans';
+
+    src: local('Lucida Sans Regular'), local('LucidaSans'),        
+        url('/assets/fonts/LucidaSans.woff2') format('woff2'),
+        url('/assets/fonts/LucidaSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
-ul{
+h1 {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 63px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+}
+
+ul {
     list-style-type: none;
 }
+
 header {
     background-image: url(/assets/image/back-layer.png);
     background-size: cover;
     padding-top: 28px;
     padding-bottom: 50px;
-
 }
+
 .header__content {
     max-width: 1300px;
     margin: 0 auto;
 }
+
 a {
     text-decoration: none;
 }
+
 .header__top {
     display: flex;
     justify-content: space-between;
@@ -37,24 +58,29 @@ a {
     width: 1024px;
     margin: 0 auto;
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo__image-wrapper {
-    /* position: relative; */
+    position: relative;
     width: 83px;
     height: 84px;
 }
+
 .logo__image {
     position: absolute;
 }
+
 .logo__image-top {
     transform: translate(-3px, -3px);
 }
-.logo__name{
+
+.logo__name {
     color: #fff;
-    font-family: 'Asap', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 41px;
     font-style: italic;
     font-weight: normal;
@@ -63,7 +89,9 @@ a {
     margin-left: 8px;
     text-shadow: 2px 2px black;
 }
-.nav__list{
+
+.nav__list {
+       /* TODO  move items more accurate*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -72,36 +100,130 @@ a {
     max-width: 450px;
     background: #f5c506;
     box-shadow: -5px -5px 0px 0px rgba(220, 177, 5, 0.5), -8px -8px 0px 0px rgba(220, 177, 5, 0.25);
-
+    cursor: pointer;
 }
 
-.nav__list li{
-    width:200px;
-    padding:10px 10px 10px 20px;
+.nav__list li {
+    width: 200px;
+    padding: 10px 10px 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-left: 1px solid #dcb105;
-    
 }
-.nav__list li:first-child{
+
+.nav__list li:first-child {
     margin-left: 40px;
     border-left: none;
-
 }
-.nav__list li a{
 
+.nav__list li a {
     font-family: 'Segoe WP', sans-serif;
     text-transform: uppercase;
     font-size: 17px;
     color: #9b7d08;
-    
 }
 
-.video__wrapper{
-
+.video__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 25px;
+}
+.slider__ctrl {
+    width: 32px;
+    height: 57px;
+    background-color: #c3a109;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.slider__content {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.video__player {
+    position: relative;
+    width: 549px;
+    height: 326px;
+}
+.prev, .video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.video__controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(286px);
+}
+
+.videoctrl__btn-main{
+    /* TODO  move center triangle to the center*/
+    width: 67px;
+    height: 67px;
+    border: none;
+    border-radius: 50%;
+    background-color: #dfce40;
+    opacity: .75;
+    position: absolute;
+    top: 40%;
+    left: 44%;
+    cursor: pointer;
+}
+.videoctrl__btn-start {
+    border: none;
+    height: 27px;
+    width: 27px;
+    background-color: #917422;
+    opacity: .37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.videoctrl__start-small{
+
+    height: 16px;
+}
+.videoCtrl__btn-sound{
+border:none;
+padding:0;
+background: none;
+cursor: pointer;
+}
+.progressBar__box {
+    position: relative;
+    cursor: pointer;
+}
+.progressBar {
+    width: 404px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #f5c507;
+    opacity: .28;
+}
+
+.progress {
+    width: 179px;
+    height: 12px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: #f5c507;
+    position: absolute;
+    top:0px;
+}
+.titleBox{
+
+    align-self: center;
+}
+.row__1 {
+    color: #f5c506
+}
+.row__2 {
+    color: #fff;
 }
