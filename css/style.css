@@ -2,25 +2,29 @@
     font-family: 'Segoe WP';
     font-style: normal;
     font-weight: normal;
-    src: local('Segoe WP'), url('/assets/fonts/SegoeWP.woff') format('woff');
+    src: local('Segoe WP'), url('../assets/fonts/SegoeWP.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('Segoe WP'), url('../assets/fonts/SFUIText-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Asap';
     font-style: normal;
     font-weight: normal;
-    src: local('Asap'), url('/assets/fonts/Asap-Medium.otf') format('opentype');
+    src: local('Asap'), url('../assets/fonts/Asap-Medium.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'Lucida Sans';
-
-    src: local('Lucida Sans Regular'), local('LucidaSans'),        
-        url('/assets/fonts/LucidaSans.woff2') format('woff2'),
-        url('/assets/fonts/LucidaSans.ttf') format('truetype');
+    src: local('Lucida Sans Regular'), local('LucidaSans'), url('../assets/fonts/LucidaSans.woff2') format('woff2'), url('/assets/fonts/LucidaSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 h1 {
     font-family: 'Lucida Sans', sans-serif;
@@ -91,7 +95,7 @@ a {
 }
 
 .nav__list {
-       /* TODO  move items more accurate*/
+    /* TODO  move items more accurate*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -130,6 +134,7 @@ a {
     align-items: center;
     padding-top: 25px;
 }
+
 .slider__ctrl {
     width: 32px;
     height: 57px;
@@ -139,30 +144,34 @@ a {
     align-items: center;
     cursor: pointer;
 }
+
 .slider__content {
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+
 .video__player {
     position: relative;
     width: 549px;
     height: 326px;
 }
+
 .prev, .video {
     height: 100%;
     width: 100%;
     position: absolute;
 }
-.video__controls{
+
+.video__controls {
     display: flex;
     justify-content: space-around;
     align-items: center;
     transform: translateY(286px);
 }
 
-.videoctrl__btn-main{
+.videoctrl__btn-main {
     /* TODO  move center triangle to the center*/
     width: 67px;
     height: 67px;
@@ -175,6 +184,7 @@ a {
     left: 44%;
     cursor: pointer;
 }
+
 .videoctrl__btn-start {
     border: none;
     height: 27px;
@@ -186,20 +196,23 @@ a {
     justify-content: center;
     cursor: pointer;
 }
-.videoctrl__start-small{
 
+.videoctrl__start-small {
     height: 16px;
 }
-.videoCtrl__btn-sound{
-border:none;
-padding:0;
-background: none;
-cursor: pointer;
+
+.videoCtrl__btn-sound {
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
 }
+
 .progressBar__box {
     position: relative;
     cursor: pointer;
 }
+
 .progressBar {
     width: 404px;
     height: 12px;
@@ -215,15 +228,56 @@ cursor: pointer;
     border-bottom-left-radius: 3px;
     background-color: #f5c507;
     position: absolute;
-    top:0px;
+    top: 0px;
 }
-.titleBox{
 
+.titleBox {
     align-self: center;
 }
+
 .row__1 {
     color: #f5c506
 }
+
 .row__2 {
     color: #fff;
+}
+
+.adv {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 37px;
+    padding-bottom: 37px;
+}
+
+.advantage__group {
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.advantage__group-center{
+    text-align: center;
+
+}
+.advantage__text {
+    font-family: 'Segoe UI', sans-serif;
+
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: block;
+}
+
+.adv__image {
+    margin-bottom: 18px;
+
+}
+
+.adv__image-middle {
+    margin-bottom: 23px;
 }
