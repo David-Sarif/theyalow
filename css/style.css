@@ -26,6 +26,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PT Sans';
+    src: local('PTS55F-webfont.woff'), url(../assets/fonts/PTS55F-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-family: 'Lucida Sans', sans-serif;
     font-size: 63px;
@@ -40,7 +47,7 @@ ul {
 }
 
 header {
-    background-image: url(../assets/image/back-layer.png);
+    background-image: url(../assets/image/back.png);
     background-size: cover;
     padding-top: 28px;
     padding-bottom: 50px;
@@ -243,30 +250,39 @@ a {
     color: #fff;
 }
 
+/* section-1 */
+
+/* TODO add shadows */
+
+.section-1 {
+    background-image: url(../assets/image/back-section-1.png);
+    background-size: cover;
+}
+
 .adv {
+    /* background-image: url(../assets/image/back-section-1.png);
+    background-size: cover; */
     display: flex;
     justify-content: space-around;
-    width: 800px;
+    width: 1024px;
     margin: 0 auto;
     padding-top: 37px;
     padding-bottom: 37px;
 }
 
 .advantage__group {
-    text-align: center;  
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
-.advantage__group-center{
+.advantage__group-center {
     text-align: center;
-
 }
+
 .advantage__text {
     font-family: 'Segoe UI', sans-serif;
-
     font-size: 27px;
     font-weight: 300;
     text-transform: uppercase;
@@ -275,9 +291,77 @@ a {
 
 .adv__image {
     margin-bottom: 18px;
-
 }
 
 .adv__image-middle {
     margin-bottom: 23px;
+}
+
+/* section-2 */
+
+/* TODO arrange pixel-perfect */
+
+.section-2 {
+    background-image: url(../assets/image/back-section-2.png);
+    background-size: cover;
+}
+
+.section-2__scroll-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section-2__wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 42px;
+    padding-bottom: 21px;
+}
+
+.section-2__title {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 37px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.section-2__scroll-left {
+    position: relative;
+    width: 640px;
+    max-width: 66.66%;
+    height: 228px;
+}
+
+.section-2__content-left-text {
+    font-family: "Segoe WP";
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 29px;
+}
+
+.section-2__scroll-left-inf {
+    width: 340px;
+    background: #ec9e03;
+    overflow-wrap: break-word;
+    position: relative;
+    padding: 25px;
+}
+
+.section-2__scroll-video {
+    flex-basis: 50%;
+    height: 228px;
+    width: 340px;
+    position: relative;
+}
+
+.video__bot {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.prev__bot{
+    height: inherit;
+    position: absolute;
 }
