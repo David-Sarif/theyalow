@@ -185,7 +185,7 @@ a {
     border: none;
     border-radius: 50%;
     background-color: #dfce40;
-    opacity: .75;
+    /* opacity: .75; */
     position: absolute;
     top: 40%;
     left: 44%;
@@ -260,8 +260,6 @@ a {
 }
 
 .adv {
-    /* background-image: url(../assets/image/back-section-1.png);
-    background-size: cover; */
     display: flex;
     justify-content: space-around;
     width: 1024px;
@@ -328,17 +326,21 @@ a {
 }
 
 .section-2__scroll-left {
+    display: flex;
     position: relative;
     width: 640px;
     max-width: 66.66%;
     height: 228px;
+    margin-top: 40px;
+    padding-bottom: 93px;
 }
 
 .section-2__content-left-text {
-    font-family: "Segoe WP";
+    font-family: "Segoe UI";
     color: #ffffff;
     font-weight: 300;
     font-size: 29px;
+    line-height: 38px;
 }
 
 .section-2__scroll-left-inf {
@@ -347,6 +349,16 @@ a {
     overflow-wrap: break-word;
     position: relative;
     padding: 25px;
+    overflow: hidden;
+}
+
+.section-2__scroll-left-expand {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
 .section-2__scroll-video {
@@ -361,7 +373,26 @@ a {
     width: 100%;
     position: absolute;
 }
-.prev__bot{
+
+.prev__bot {
     height: inherit;
     position: absolute;
+}
+.section-2__scroll-left-date{
+text-transform: uppercase;
+position: absolute;
+bottom: 0;
+background: #ddb101;
+text-align: center;
+padding: 15px 30px 9px;
+}
+.section-2__date{
+font-weight: 600;
+font-size: 51px;
+color: #fff;
+}
+.section-2__month{
+
+    font-size: 21px;
+    color: #b26529;
 }
